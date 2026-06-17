@@ -11,10 +11,18 @@
     "nodemailer": "^6.9.4"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.9.3",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
   },
   "scripts": {
-  "start": "node index.js",
-  "dev": "nodemon index.js"
-}
+    "dev": "nodemon",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  }
 }
